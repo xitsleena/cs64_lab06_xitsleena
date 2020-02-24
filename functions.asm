@@ -16,7 +16,7 @@ convention:
     .asciiz "\nConvention Check\n"
 
 myArray:
-	.word 0 33 123 -66 332 -1 -223 453 9 45 -78 -14  
+	.word 0 33 123 -66 332 -1 -223 453 9 45 -78 -14
 
 #Text Area (i.e. instructions)
 .text
@@ -158,7 +158,8 @@ ReverseFinish:
     lw $s1, 4($sp)
     lw $s0, 8($sp)
     addiu $sp, $sp, 12
- 
+    
+    addi $s1, $s1, 1
  
 #    li $a0, 2000
  #   li $v0, 1 
